@@ -1,0 +1,41 @@
+#barra {padding-left: 10px;height: 30px;line-height: 30px;margin-top: 10px;background-color: #5d87c7; border-radius: 6px 6px 0 0; -webkit-border-radius:6px 6px 0 0 ; -moz-border-radius:6px 6px 0 0 ; position: relative}
+
+#busca {text-align: right;position: absolute; right: 0;top:0; padding-right:10px;}
+.btnBusca {height: 25px; width: 50px;}
+
+#menu-superior {float: right;}
+#menu-superior ul li {list-style: none; float: left;}
+#menu-superior ul li a {color: black; text-decoration: none; padding: 10px; font-weight: bold}
+#menu-superior ul li a:hover {text-decoration: underline}
+
+#conteudo    {padding: 10px; margin-bottom: 15px;background: #FFF; border-radius: 0 0 6px 6px; -webkit-border-radius:0 0 6px 6px ; -moz-border-radius:0 0 6px 6px ;}
+#conteudo h3 {font-size: 16px; color:#5d87c7}
+
+#list-products {margin-top: 15px;  }
+#list-products dl {float: left; width: 200px; margin: 0 40px 50px 0; background-color: white;}
+#list-products dl dt { padding: 0px 10px; font-size: 11px; text-align: center;}
+#list-products dl dt a {text-decoration: none; color: black;}
+#list-products dl dt a:hover {text-decoration: underline;}
+#list-products dl dd {margin: 1px 10px;text-align: center;}
+
+.valor {color: green; font-size: 12px;font-weight: bold;padding-top: 3px;}
+.carrinho {margin-top: 10px;font-weight: bold;}
+
+#product-view {margin-top: 10px; }
+#product-image {float:left; padding: 10px;}
+#product-image {margin-right: 20px; }
+#produtct-description {width: 70%;float:left;margin-bottom: 10px}
+
+#conteudo    {background: #FFF;padding: 10px 15px 10px 15px; border: 1px solid #5d87c7; border-radius: 0 0 6px 6px; -webkit-border-radius: 0 0 6px 6px; -moz-border-radius: 0 0 6px 6px;}
+.content-line 	{border: none; border-top: 1px solid #e9e7e7; color: #FFF; background-color: #FFF; width: 100%; text-align: center;margin:10px 0;}
+
+#conteudo table {width: 100%; margin-top: 15px;}
+#conteudo table th {background: #c0d9a6; border: 1px solid white; border-radius: 6px 6px 0 0; -webkit-border-radius:6px 6px 0 0 ; -moz-border-radius:6px 6px 0 0 ;}
+#conteudo table td {background: #f6f7f5; border: 1px solid white; }
+
+.input-p {text-align: center;width: 30px;border: 1px solid #cacaca;height: 17px;font: 12px Verdana, Arial, Verdana, sans-serif;}
+.btnCheckout {text-align: right; font-weight: bold; font-size: 16px; }
+.btnCheckout a {text-decoration: none;color: green;}
+.btnCheckout a:hover {text-decoration: underline;}
+
+#footer {background: #5d87c7; height: 25px;line-height: 25px; color: #FFF}

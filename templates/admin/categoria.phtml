@@ -1,0 +1,57 @@
+
+
+<p><center><h3> Categoria </h3><a href="?edit=0">Adicionar nova Categoria</center></a></p>
+
+{if $edit >= 0}
+	<form method="post">
+		<table>
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Ação</th>
+				</tr>
+			</thead>	
+			<tbody>
+				<tr>
+					{if $edit==0}
+						<td><input type="text" name="data[nome]" value="" autocomplete="off"></td>
+					{else}	
+						<td><input type="text" name="data[nome]" value="{$categoria.nome}"></td>
+					{/if}
+					<td>
+						<input type="submit" value="Salvar" name="submit">
+						<!--<a href="./admin_categorias.php"><button class="btn btn-sm btn-alert" >Cancelar</button></a>-->
+					</td>
+
+				</tr>
+			</tbody>
+		</table>	
+		<input type="hidden" name="id" value="{$edit}">
+	</form>
+	<div id="clearfix"></div>
+{/if}
+
+
+<table>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Nome</th>
+			<th>Ação</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		{section name=i loop=$categorias}
+		<tr>
+			<td>{$categorias[i].id}</td>
+			<td>{$categorias[i].nome}</td>
+			<td>
+				<a href="?edit={$categorias[i].id}"><img src="images/icons/edit.png"></a> &nbsp;
+				<a href="?delete={$categorias[i].id}"><img src="images/icons/delete.png"></a>
+			</td>
+		</tr>
+		{/section}		
+	</tbody>
+
+</table>
