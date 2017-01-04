@@ -7,7 +7,10 @@ class Livraria_Auth_Adapter_Db extends Livraria_Auth_Adapter_Abstract{
     private $db_password = null;
     private $table = null;
     private $db = null;
-    
+    function __construct($db) {
+        $this->db = $db;
+    }
+
     function getDb_user() {
         return $this->db_user;
     }
@@ -42,8 +45,7 @@ class Livraria_Auth_Adapter_Db extends Livraria_Auth_Adapter_Abstract{
 
         
     public function autenticate() {
-        $stmt = $this->db->prepare("select * from $this->table where "
-                . "$this->db_user=:user and $this->db_password=:password");
+        $stmt = $this->db->prepare("select * from $this->table where $this->db_user=:user and $this->db_password=:password");
         $stmt->bindValue(":user", $this->user);
         $stmt->bindValue(":password", $this->password);        
         $stmt->execute();

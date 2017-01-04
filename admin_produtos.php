@@ -1,7 +1,8 @@
 <?php
 
 	require_once 'config/index.php';
-	
+	require_once 'config/checkAuth.php';
+        
 	if(!isset($_REQUEST['delete']))
 		$_REQUEST['delete'] = -1;
 	if(!isset($_REQUEST['edit']))
