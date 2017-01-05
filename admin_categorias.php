@@ -43,6 +43,7 @@
 	$categorias = new Livraria_Categoria();
 	$smarty->assign('categorias',$categorias->fetchAll());
 	//fim Listar
+        $smarty->assign("logado", $auth->isLogged());
 	$smarty->assign("content","admin/categoria.phtml");
 	$smarty->display("admin/layout.phtml");
 	

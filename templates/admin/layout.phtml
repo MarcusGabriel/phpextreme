@@ -26,8 +26,10 @@
                     <ul class="navigation">
                         <li><a href="admin_pedidos.php">Pedidos</a></li>
                         <li><a href="admin_produtos.php">Produtos</a></li>
-                        <li class="active"><a href="admin_categorias.php">Categorias</a></li>
-                        <li><a href="logout.php">Sair</a></li>
+                        <li class="active"><a href="admin_categorias.php">Categorias</a></li>                      
+                        {if $logado}
+                            <li><a href='logout.php'>Sair</a></li>
+                        {/if}                        
                     </ul>
                 </div>
             </div>

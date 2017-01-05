@@ -22,5 +22,6 @@ if (isset($_REQUEST['submit'])) {
         $smarty->assign('data', $_REQUEST['data']);
     }
 }
+$smarty->assign("logado", 0);
 $smarty->assign('content', 'admin/auth.phtml');
 $smarty->display("admin/layout.phtml");

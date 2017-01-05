@@ -51,5 +51,6 @@
 	$smarty->assign("edit",$_REQUEST['edit']);
 
 	//display
+        $smarty->assign("logado", $auth->isLogged());
 	$smarty->assign("content","admin/produtos.phtml");
 	$smarty->display("admin/layout.phtml");
