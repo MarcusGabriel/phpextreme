@@ -1,0 +1,27 @@
+<h3>Pedidos</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        {section name=i loop=$pedidos}
+            <tr>
+                <td>{$pedidos[i].id}</td>
+                <td>{$pedidos[i].produto}</td>
+                <td>{$pedidos[i].nome}</td>
+                <td>{$pedidos[i].email}</td>                
+                <td>{if $pedidos[i].status}{$pedidos[i].status}{else}Pendente{/if}</td>
+                
+            </tr>
+        {/section}
+    </tbody>
+    
+</table>

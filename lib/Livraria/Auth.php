@@ -17,15 +17,17 @@ class Livraria_Auth implements Livraria_Auth_Interface {
             $_SESSION['Livraria_Auth']['user'] = $adapter->getUser();
             return true;
         }
-        else
+        else{
             return false;
+        }
     }
 
     public function isLogged() {
-        if (isset($_SESSION['Livraria_Auth']['auth']))
+        if (isset($_SESSION['Livraria_Auth']['auth'])){
             return true;
-        else
+        }else{
             return false;
+        }
     }
 
     public function logout() {
